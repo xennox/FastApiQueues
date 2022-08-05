@@ -16,7 +16,6 @@ WorksData = []
 async def createfromworker() -> None:
     for a in WorksData:
         NumData.append(a['Num'])
-        WorksData.pop(0)
 
 
 @app.get('/getnums', status_code=200, tags=['NUMS'])
