@@ -16,6 +16,7 @@ WorksData = []
 async def createfromworker() -> None:
     for a in WorksData:
         NumData.append(a['Num'])
+        NumData.sort()
         WorksData.remove(a)
 
 
